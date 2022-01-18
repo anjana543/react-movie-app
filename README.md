@@ -23,7 +23,7 @@ The GridItem component wraps an image, and title text.
 
 ### Loader
 
-The Loader component provides a simple and round spinner component.
+The Loader component provides a simple and round spinner loader.
 
 ### Image
 
