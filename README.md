@@ -7,9 +7,33 @@ A Movie Listing App!
 1. Clone this repository and install the dependencies using `npm`
 2. Runs the app in the development mode using `npm start`
 
-## Getting Started with Create React App
+## COMPONENTS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To speed up the time there are several components provided that will help you structure the user interface.
+
+These components are based on the Tailwind CSS - a utility-first CSS framework for rapidly building custom user interfaces.
+
+### TextField
+
+The TextField component serves as a wrapper component for input element.
+
+### GridItem
+
+The GridItem component wraps an image, and title text.
+
+### Loader
+
+The Loader component provides a simple and round spinner component.
+
+### Image
+
+The Image component used to add path to the image and has fallback for broken images.
+
+### ErrorBlock
+
+The ErrorBlock component acts as a wrapper to the error messages.
+
+## Getting Started with the App
 
 ## Available Scripts
 
@@ -38,42 +62,41 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## DATA SCHEMA
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Movie List Api
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```json
+{
+  "page": {
+    // Movie Genre
+    "title": "Romantic Comedy",
+    // Total number of movies available for the genre
+    "total-content-items": "10",
+    // Requested page number
+    "page-num-requested": "1",
+    // Expected number of movie items
+    "page-size-requested": "5",
+    // Actual number of movie items returned
+    "page-size-returned": "3",
+    "content-items": {
+      "content": [
+        {
+          // Movie title
+          "name": "The Birds",
+          // Movie poster image
+          "poster-image": "poster1.jpg"
+        },
+        {
+          "name": "Rear Window",
+          "poster-image": "poster2.jpg"
+        },
+        {
+          "name": "Family Pot",
+          "poster-image": "poster3.jpg"
+        }
+      ]
+    }
+  }
+}
+```
