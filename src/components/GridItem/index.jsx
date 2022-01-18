@@ -16,11 +16,7 @@ function GridItem({ item }) {
         src={item["poster-image"]}
         alt={item.name}
         className="flex-none w-full h-full pb-2"
-        loading="lazy"
-        onError={({ currentTarget }) => {
-          currentTarget.onerror = null;
-          currentTarget.src = "/assets/placeholder_for_missing_posters.png";
-        }}
+        errSrc="placeholder_for_missing_posters.png"
       />
       <div className="flex-none w-full text-left text-slate-50 whitespace-nowrap overflow-hidden overflow-ellipsis">
         {item.name}

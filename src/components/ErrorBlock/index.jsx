@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 const ErrorBlock = ({ title, subTitle, color, align }) => {
   return (
     <div
-      className={`p-10 m-5 text-sm text-${color} text-${align}`}
+      className={`flex justify-center items-center p-10 m-5 text-sm text-${color} text-${align}`}
       role="alert"
     >
       {title && <span className="font-medium">{title}</span>} {subTitle}

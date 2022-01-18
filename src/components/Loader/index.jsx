@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 /**
  * @description - Loader Component.
  * @param {string} color - Border color of loader.
@@ -7,27 +5,18 @@ import PropTypes from "prop-types";
  * @param {string} height - Loader height.
  * @returns {Node} - ErrorBlock View Component
  */
-const Loader = ({ color, width, height }) => {
+const Loader = (props) => {
   return (
-    <div className="flex items-center justify-center ">
+    <div className="flex justify-center items-center p-10 m-5">
       <div
-        className={`w-${width} h-${height} border-b-2 border-${color}-900 rounded-full animate-spin`}
+        className={`spinner-border animate-spin inline-block w-12 h-12 border-b-2 rounded-full`}
+        role="status"
         data-testid="loader"
-      ></div>
+      >
+        <span className="visually-hidden">Loading...</span>
+      </div>
     </div>
   );
-};
-
-Loader.defaultProps = {
-  color: "white",
-  width: "16",
-  height: "16",
-};
-
-Loader.propTypes = {
-  color: PropTypes.string,
-  width: PropTypes.string,
-  height: PropTypes.string,
 };
 
 export default Loader;
