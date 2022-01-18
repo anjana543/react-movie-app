@@ -27,11 +27,11 @@ The Loader component provides a simple and round spinner loader.
 
 ### Image
 
-The Image component used to add path to the image and has fallback for broken images.
+The Image component provides option to set the image path, alternative text and fallback for broken images.
 
 ### ErrorBlock
 
-The ErrorBlock component acts as a wrapper to the error messages.
+The ErrorBlock component acts as a wrapper to the api error message.
 
 ## Getting Started with the App
 
