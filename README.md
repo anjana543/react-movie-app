@@ -2,7 +2,7 @@
 
 A Movie Listing App!
 
-##LIVE APP DEMO (Check in mobile application)
+## LIVE APP DEMO (Check in mobile application)
 
 https://anjana543.github.io/react-movie-app/
 
