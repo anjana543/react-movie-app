@@ -1,6 +1,3 @@
-import React, { useState, useCallback } from "react";
-import PropTypes from "prop-types";
-
 /**
  * @description - TextField Component.
  * @returns {Node} - Returns the TextField view.

@@ -8,5 +8,5 @@ export const API = {
 };
 
 export const CONFIG = {
-  ASSETS: "assets/",
+  ASSETS: `${process.env.PUBLIC_URL}/assets/`,
 };
