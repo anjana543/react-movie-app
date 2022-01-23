@@ -2,6 +2,10 @@
 
 A Movie Listing App!
 
+## LIVE APP DEMO (Check in mobile application)
+
+https://anjana543.github.io/react-movie-app/
+
 ## INSTRUCTIONS
 
 1. Clone this repository and install the dependencies using `npm`
@@ -100,3 +104,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
   }
 }
 ```
+
